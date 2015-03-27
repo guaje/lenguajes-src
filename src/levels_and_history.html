@@ -1,0 +1,154 @@
+<section>
+	<section data-markdown>
+		## Niveles  e historia de los lenguajes de programación
+	</section>
+
+	<section data-markdown>
+		<script type="text/template">
+		## Lenguaje de máquina
+
+		|          Código          |              Argumentos              |
+		|:------------------------:|:------------------------------------:|
+		| 0010 <br> 1010 <br> 0110 | 00011010 <br> 10111000 <br> 11010001 |
+
+		- <!-- .element: class="fragment" -->
+		Es el único lenguaje que entiende el hardware (máquina) y usa exclusivamente el sistema binario (ceros y unos).
+		- <!-- .element: class="fragment" -->
+		Este lenguaje es específico para cada hardware (procesador, dispositivos, etc.).
+		- <!-- .element: class="fragment" -->
+		El programa (tanto códigos de instrucción como datos) es almacenado en memoria.
+		</script>
+	</section>
+
+	<section data-markdown>
+		<script type="text/template">
+		## Subiendo el nivel: Entre el lenguaje de máquina y ...
+
+		Era necesaria la creación de un lenguaje que nos permitiera comunicarnos con la máquina de una manera más sencilla.
+		
+		<!-- .element: class="fragment" -->
+		La respuesta a esta necesidad llegó en forma del __lenguaje ensamblador__.
+
+		- <!-- .element: class="fragment" -->
+		Es un lenguaje intermedio que emplea __mnemónicos__ para codificar las operaciones.
+		- <!-- .element: class="fragment" -->
+		Las __direcciones__ y los __datos__ pasaron de ser codificados en __binario__ a ser codificados en __hexadecimal__.
+		- <!-- .element: class="fragment" -->
+		Es específico para cada lenguaje de máquina.
+		</script>
+	</section>
+
+	<section data-markdown>
+		<script type="text/template">
+		## El lenguaje ensamblador
+
+		|       Mnemónico       |           Argumentos           |
+		|:---------------------:|:------------------------------:|
+		| ADD <br> MOV <br> SUB | R1, 1A <br> B8, R2 <br> R1, B1 |
+
+		- <!-- .element: class="fragment" -->
+		El software capaz de traducir de lenguaje ensamblador a lenguaje de máquina se llama __Ensamblador__.
+		- <!-- .element: class="fragment" -->
+		Este lenguaje significó un gran avance, pues separó al programa de la máquina (Turing y Von Neumann).
+		- <!-- .element: class="fragment" -->
+		Explotó el potencial de la máquina al darle control sobre otros programas, permitiendo así el nacimiento de los SOs.
+		</script>
+	</section>
+
+	<section data-markdown>
+		<script type="text/template">
+		## Subiendo el nivel: Entre el lenguaje ensamblador y ...
+
+		¿Qué tal si se genera un lenguaje mas parecido al lenguaje natural?
+
+		<!-- .element: class="fragment" -->
+		¿Qué características tendría que tener?
+
+		- <!-- .element: class="fragment" -->
+		La máquina solo entiende 1 y 0s. Por lo tanto sería necesario traducir el programa escrito en este nuevo lenguaje a lenguaje de máquina.
+		</script>
+	</section>
+
+	<section data-markdown>
+		## El nacimiento de los lenguajes de alto nivel
+
+		- __Lenguajes interpretados__: Toman cada instrucción, la traducen y luego la ejecutan, e.g. Basic, Python.
+		- __Lenguajes compilados__: Toman todo el programa, lo traducen a lenguaje ensamblador y luego lo ejecutan, e.g. C, C++.
+	</section>
+
+	<section data-markdown>
+		<script type="text/template">
+		## Lenguajes de alto nivel
+
+		- Están basados en estructuras gramaticales que codifican estructuras de control y/o instrucciones.
+		- <!-- .element: class="fragment" -->
+		Cuenta con un conjunto de __palabras reservadas__ (en lenguaje natural).
+		- <!-- .element: class="fragment" -->
+		Permiten el uso de símbolos aritméticos (+, -, *, /, %) y relacionales (<, <=, >, >=, ==, !=).
+		- <!-- .element: class="fragment" -->
+		Generalmente representan las cantidades numéricas en sistema decimal (0, 1, 2, 3, 4, 5, 6, 7, 8, 9).
+		- <!-- .element: class="fragment" -->
+		Introducen conceptos como las __variables__ para facilitar el direccionamiento de memoria.
+		</script>
+	</section>
+
+	<section data-markdown>
+		## Lenguajes de alto nivel: Ejemplos
+
+```cpp
+#include &lt;iostream&gt;
+
+using namespace std;
+
+bool esPar(int x)
+{
+	return x % 2 == 0;
+}
+
+int main()
+{
+	cout << esPar(2) << endl;
+	cout << esPar(5) << endl;
+	cout << esPar(44) << endl;
+
+    return 0;
+}
+```
+	</section>
+
+	<section data-markdown>
+		## Lenguajes de alto nivel: Ejemplos
+
+```python
+def esPar(x):
+	return x % 2 == 0
+
+def main():
+	print esPar(2)
+	print esPar(5)
+	print esPar(44)
+
+if __name__ == "__main__":
+    main()
+```
+	</section>
+
+	<section data-markdown>
+		## Lenguajes de alto nivel: Ejemplos
+
+```python
+def esPar(x):
+	return x % 2 == 0
+
+print esPar(2)
+print esPar(5)
+print esPar(44)
+```
+	</section>
+
+	<section data-markdown>
+		## El caso Java: Lenguajes precomplilados
+
+		El compilador del lenguaje Java genera código _bytecode_, el cual luego es interpretado por una máquina virtual específica.
+	</section>
+</section>

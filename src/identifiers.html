@@ -1,0 +1,191 @@
+<section>
+	<section data-markdown>
+		## Identificadores
+	</section>
+
+	<section data-markdown>
+		##Identificadores: Ejemplos en C++
+
+```cpp
+#include &lt;iostream&gt;
+
+using namespace std;
+
+bool esPar(int x)
+{
+	return x % 2 == 0;
+}
+
+bool esVocal(char v)
+{
+	return v == 'a' || v == 'e' || v == 'i' || v == 'o' || v == 'u';
+}
+
+int main()
+{
+	bool miBooleano = true;
+	bool miBooleanoEnNumero = 1;
+
+	char miCaracter = 'A';
+	char miCaracterEnASCII = 65;
+
+	int miEntero = 5;
+
+	float miFlotante = 3.0;
+
+	char miArreglo[] = {'a', 'e', 'i', 'o', 'u'};
+
+	int miMatriz[2][2] = &#123;{255, 0}, {0, 255}&#125;;
+
+	return 0;
+}
+```
+	</section>
+
+	<section data-markdown>
+		## Identificadores: Ejemplos en Python
+
+```python
+def esPar(x):
+	return x % 2 == 0
+
+def esVocal(v):
+	return v == 'a' or v == 'e' or v == 'i' or v == 'o' or v == 'u'
+
+miBooleano = True
+miBooleanoEnNumero = bool(1)
+
+miCaracter = 'A'
+miCaracterEnASCII = chr(65)
+
+miEntero = 5
+
+miFlotante = 3.0
+
+miLista = ['a', 'e', 'i', 'o', 'u']
+miTupla = ('a', 'e', 'i', 'o', 'u')
+
+miMatriz = [[255, 0], [0, 255]]
+```
+	</section>
+
+	<section data-markdown>
+		<script type="text/template">
+		## Identificadores: Definición
+
+		__Identificador__: Secuencias de símbolos que se utilizan como __nombres de varibles__, __funciones__, __arreglos__, __clases__ y otras estructuras de los lenguajes de programación.
+
+		- <!-- .element: class="fragment" -->
+		Los identificadores se escriben como secuencias de __caracteres alfanuméricos__ del __alfabeto inglés__ o el __guión bajo__ (_underscore_) ('_'), tales que su primer símbolo no es un dígito.
+		- <!-- .element: class="fragment" -->
+		Un identificador no puede tener más de 256 símbolos.
+		</script>
+	</section>
+
+	<section>
+		<h2>Identificadores: Consideraciones</h2>
+
+		<p>
+			Un identificar válido debe cumplir con la condición adicional de que no pertenezca a las palabras reservadas para el lenguaje.
+		</p>
+
+		<table class="fragment">
+			<thead>
+				<tr>
+					<th colspan="6" style="text-align:center">Palabras reservadas C++</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td style="text-align:center">
+						auto <br> bool <br> break <br> case <br> catch
+					</td>
+					<td style="text-align:center">
+						char <br> class <br> const <br> continue <br> default
+					</td>
+					<td style="text-align:center">
+						delete <br> do <br> double <br> else <br> enum
+					</td>
+					<td style="text-align:center">
+						extern <br> false <br> float <br> for <br> friend
+					</td>
+					<td style="text-align:center">
+						goto <br> if <br> inline <br> int <br> long
+					</td>
+					<td style="text-align:center">
+						namespace <br> new <br> operator <br> private <br> ...
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+
+	<section>
+		<h2>Identificadores: Consideraciones</h2>
+
+		<table>
+			<thead>
+				<tr>
+					<th colspan="4" style="text-align:center">Palabras reservadas Python</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td style="text-align:center">
+						and <br> assert <br> break <br> class <br> continue <br> def <br> del
+					</td>
+					<td style="text-align:center">
+						elif <br> else <br> except <br> exec <br> finally <br> for <br> from
+					</td>
+					<td style="text-align:center">
+						global <br> if <br> import <br> in <br> is <br> lambda <br> not
+					</td>
+					<td style="text-align:center">
+						or <br> pass <br> print <br> raise <br> return <br> try <br> while
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+
+	<section data-markdown>
+		## Identificadores: Consideraciones
+
+		Muchos lenguajes de programación son sensibles a mayúsculas y a minúsculas, esto quiere decir, que los identificadores:
+
+		blanco, Blanco y BLANCO
+
+		sirven para declarar entidades diferentes.
+	</section>
+
+	<section>
+		<h2>Identificadores: Ejemplos</h2>
+
+		<table>
+			<thead>
+				<tr>
+					<th style="text-align:center">Ejemplo</th>
+					<th style="text-align:center">¿Es válido?</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td style="text-align:center">1er_mes</td>
+					<td><p class="fragment"><b>NO</b>: El primer símbolo es un dígito.</p></td>
+				</tr>
+				<tr>
+					<td style="text-align:center">primer nombre</td>
+					<td><p class="fragment"><b>NO</b>: El caracter ' ' no está soportado.</p></td>
+				</tr>
+				<tr>
+					<td style="text-align:center">while</td>
+					<td><p class="fragment"><b>NO</b>: <i>while</i> es una palabra reservada del lenguaje.</p></td>
+				</tr>
+				<tr>
+					<td style="text-align:center">friend</td>
+					<td><p class="fragment">En C++ <b>no</b> porque es una palabra reservada, en python <b>si</b> puede ser usado.</p></td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+</section>

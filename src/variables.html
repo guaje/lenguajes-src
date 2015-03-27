@@ -1,0 +1,104 @@
+<section>
+	<section data-markdown>
+		## Variables
+	</section>
+
+	<section data-markdown>
+		## Variables: Ejemplos en C++
+
+```cpp
+#include &lt;iostream&gt;
+
+using namespace std;
+
+bool esPar(int x)
+{
+	return x % 2 == 0;
+}
+
+bool esVocal(char v)
+{
+	return v == 'a' || v == 'e' || v == 'i' || v == 'o' || v == 'u';
+}
+
+int main()
+{
+	bool miBooleano = true;
+	bool miBooleanoEnNumero = 1;
+
+	char miCaracter = 'A';
+	char miCaracterEnASCII = 65;
+
+	int miEntero = 5;
+
+	float miFlotante = 3.0;
+
+	char miArreglo[] = {'a', 'e', 'i', 'o', 'u'};
+
+	int miMatriz[2][2] = &#123;{255, 0}, {0, 255}&#125;;
+
+	return 0;
+}
+```
+	</section>
+
+	<section data-markdown>
+		## Variables: Ejemplos en Python
+
+```python
+def esPar(x):
+	return x % 2 == 0
+
+def esVocal(v):
+	return v == 'a' or v == 'e' or v == 'i' or v == 'o' or v == 'u'
+
+miBooleano = True
+miBooleanoEnNumero = bool(1)
+
+miCaracter = 'A'
+miCaracterEnASCII = chr(65)
+
+miEntero = 5
+
+miFlotante = 3.0
+
+miLista = ['a', 'e', 'i', 'o', 'u']
+miTupla = ('a', 'e', 'i', 'o', 'u')
+
+miMatriz = [[255, 0], [0, 255]]
+```
+	</section>
+
+	<section data-markdown>
+		## Variables: Definición
+
+		__Variable__: Es un espacio de memoria donde se almacena un dato, un espacio donde se guarda la información necesaria para realizar las acciones que ejecutan los programas.
+	</section>
+
+	<section>
+		<h2>Variables: Declaración</h2>
+
+		<ul>
+			<li>Tipo de variable *</li>
+			<li>Nombre o identificador de la variable</li>
+		</ul>
+
+		<p>De la siguiente manera \(\mathbb{T} x;\) **</p>
+
+		<p class="fragment">
+			Donde \(\mathbb{T}\) es el tipo de dato o conjunto al que pertenece la variable y \(x\) es el identificador o nombre de la variable.
+		</p>
+
+		<p class="fragment">
+			* En lenguajes como python no es necesario declarar el tipo, esto es porque python posee <i>tipado dinámico</i>.
+			<br>
+			** En lenguajes como pyhton no es necesario el caracter ';'.
+		</p>
+	</section>
+
+	<section data-markdown>
+		## Variables: Recomendaciones
+
+		Una buena práctica de programación es asignarle el nombre a una variable de tal manera que indique por un lado el papel que desempeña dicha variable en el algoritmo y por otro los posibles valores que almacena.
+	</section>
+</section>
